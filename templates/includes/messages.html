@@ -1,0 +1,14 @@
+<div class="container-fluid text-center">
+    {% if messages %}
+    {% for message in messages %}
+   {% if message.tags == 'error' %}
+   <br>
+   <span class="bg-danger p-1" style="border-radius: 5px;">{{ message }}</span>
+   {% else %}
+   <br>
+   <span class="bg-success p-1" style="border-radius: 5px;">{{ message }}</span>
+   {% endif %}
+    
+    {% endfor %}
+    {% endif %}
+</div>
