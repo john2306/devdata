@@ -155,86 +155,93 @@
       Nosotros
     ============================-->
     <section id="why-us" class="wow fadeIn">
-      <div class="container-fluid">
+      <div class="container">
 
         <header class="section-header">
-          <h3>Nosotros</h3>
-          <p> <b>DEVDATA</b> es una empresa formada para brindar servicios de Consultorías en Tecnologías de la
-            Información, Gestión de Proyectos, Análisis y
-            Mejoramiento de Procesos de Negocio,
-            Outsourcing, Desarrollo de Software y Desarrollo de Apps. Nuestro equipo está conformado por un staff de
-            profesionales altamente capacitados, quienes pondrán a su disposición
-            toda la experiencia y profesionalismo que los caracteriza con el firme propósito de ayudarlos a cumplir con
-            los objetivos de su empresa o con sus proyectos personales.</p>
+          <h3>DEVDATA</h3>
+          <p>Somos empresa que brinda consultorías en Tecnologías de la Información, Gestión de
+            proyectos, Mejora de Procesos, Outsourcing, Desarrollo de Modelos Predictivos, Implementación y Soporte
+            Tecnológico,
+            Desarrollo de Software a medida y Aplicativos Móviles.</p>
         </header>
 
         <div class="row">
-
-          <div class="col-lg-6">
-            <div class="why-us-img">
-              <img src="{% static 'img/why-us.jpg' %}" alt="" class="img-fluid">
-            </div>
-          </div>
 
           <div class="col-lg-6">
             <div class="why-us-content">
               <div class="features wow bounceInUp clearfix">
                 <i class="fa fa-line-chart" style="color: #1bb1dc;"></i>
                 <h4>ANALÍTICA</h4>
-                <p>Optimizamos base de datos, arquitectura de base datos, explotamos al maximo la data con analitica
-                  para la toma de decisiones
-                  mediante la inteligencia artificial.</p>
+                <p>Optimizamos base de datos, arquitectura de base datos, explotamos al máximo sus datos con analítica
+                  avanzada para la toma de decisiones
+                  mediante la <b>inteligencia artificial</b>.</p>
               </div>
 
               <div class="features wow bounceInUp clearfix">
-                <i class="fa fa-lock" style="color: #2ceb65;"></i>
+                <i class="fa fa-lock" style="color: #4be980;"></i>
                 <h4>CiBERSEGURIDAD</h4>
                 <p>Para que tu empresa tenga los mejores indices de gestión de riesgos y vulnerabilidades, mejore los
-                  indices de ciberseguridad de tu empresa.</p>
+                  indices de ciberseguridad de tu organización.</p>
               </div>
 
               <div class="features wow bounceInUp clearfix">
                 <i class="fa fa-code" style="color: #589af1;"></i>
                 <h4>SOFTWARE</h4>
                 <p>Digitalice y automatice sus procesos, nos encargamos de análisis y mejoramiento de procesos, gestión
-                  de proyectos y desarrollo de software (desarrollo
-                  de apps para IOS y android, diseño y desarrollo de sistemas).
+                  de proyectos y desarrollo de software a medida.
                   <br>
-                  <strong>Realizamos un diagnóstico GRATUITO tanto del aspecto analítico y seguridad de la información
-                    de su organización totalmente.</strong>
+                  <strong>Realizamos un pre-diagnóstico GRATUITO.</strong>
                 </p>
               </div>
-
-
             </div>
-
           </div>
 
-        </div>
+          <div class="col-lg-6">
+            <div class="why-us-content">
+              <div class="features wow bounceInUp clearfix">
+                <i class="fa fa-mobile-phone" style="color: #f52db2;"></i>
+                <h4>APLICACIONES MÓVILES</h4>
+                <p>Desarrollamos aplicativos móviles a medida para tu organización, emprendimiento. Asimismo, productos
+                  mínimos viables para validar a tu mercado objetivo.</p>
+              </div>
 
+              <div class="features wow bounceInUp clearfix">
+                <i class="fa fa-puzzle-piece" style="color: #0f70df;"></i>
+                <h4>SOPORTE TECNOlÓGICO</h4>
+                <p>Brindamos soporte tecnológico para su organización, entregamos calidad, 
+                  tecnologías modernas, servicio las 24 horas y 7 días de la semana y estamos orientados a resultados.</p>
+              </div>
+
+              <div class="features wow bounceInUp clearfix">
+                <i class="fa fa-cogs" style="color: #227272;"></i>
+                <h4>MEJORA DE PROCESOS</h4>
+                <p>Estamos preparados para rediseñar y automatizar en la medida de lo posible los procesos de su negocio, mejorar
+                  y crear una cadena de valor coherente y competitivo.
+                  <br>
+                  <strong>Realizamos un pre-diagnóstico GRATUITO.</strong>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
 
       <div class="container">
         <div class="row counters">
 
-          <div class="col-lg-3 col-6 text-center">
+          <div class="col-lg-4 col-6 text-center">
             <span data-toggle="counter-up">45</span>
             <p>Clientes</p>
           </div>
 
-          <div class="col-lg-3 col-6 text-center">
-            <span data-toggle="counter-up">21</span>
+          <div class="col-lg-4 col-6 text-center">
+            <span data-toggle="counter-up">60</span>
             <p>Proyectos</p>
           </div>
 
-          <div class="col-lg-3 col-6 text-center">
-            <span data-toggle="counter-up">1,364</span>
+          <div class="col-lg-4 col-6 text-center">
+            <span data-toggle="counter-up">2,364</span>
             <p>Horas De Soporte</p>
-          </div>
-
-          <div class="col-lg-3 col-6 text-center">
-            <span data-toggle="counter-up">18</span>
-            <p>Equipo</p>
           </div>
 
         </div>
@@ -271,7 +278,7 @@
             <div class="portfolio-wrap">
               <img src="{{proyecto.imagen.url}}" class="img-fluid" alt="">
               <div class="portfolio-info">
-                <h4><a href="#">{{proyecto.nombre}}</a></h4>
+                <h4><a href="{{proyecto.url}}" target="_blank">{{proyecto.nombre}}</a></h4>
                 <p>Móvil</p>
                 <div>
                   <a href="{{proyecto.imagen.url}}" data-lightbox="portfolio" data-title="{{proyecto.nombre}}"
@@ -287,7 +294,7 @@
             <div class="portfolio-wrap">
               <img src="{{proyecto.imagen.url}}" class="img-fluid" alt="">
               <div class="portfolio-info">
-                <h4><a href="#">{{proyecto.nombre}}</a></h4>
+                <h4><a href="{{proyecto.url}}" target="_blank">{{proyecto.nombre}}</a></h4>
                 <p>Web</p>
                 <div>
                   <a href="{{proyecto.imagen.url}}" class="link-preview" data-lightbox="portfolio"
@@ -303,7 +310,7 @@
             <div class="portfolio-wrap">
               <img src="{{proyecto.imagen.url}}" class="img-fluid" alt="">
               <div class="portfolio-info">
-                <h4><a href="#">{{proyecto.nombre}}</a></h4>
+                <h4><a href="{{proyecto.url}}" target="_blank">{{proyecto.nombre}}</a></h4>
                 <p>Data Science</p>
                 <div>
                   <a href="{{proyecto.imagen.url}}" class="link-preview" data-lightbox="portfolio"
@@ -326,7 +333,7 @@
     <section id="testimonials">
       <div class="container">
         <header class="section-header">
-          <h3>Testimonios</h3>
+          <h3>Testimonios.</h3>
         </header>
         <div class="row justify-content-center">
           <div class="col-lg-8">
@@ -381,9 +388,8 @@
               <div class="col-sm-6">
                 <div class="footer-info">
                   <h3>DevData</h3>
-                  <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita
-                    valies darta donna mare fermentum iaculis eu non diam phasellus. Scelerisque felis imperdiet proin
-                    fermentum leo. Amet volutpat consequat mauris nunc congue.</p>
+                  <p>Estamos listos para acompañarte en la TRANSFORMACIÓN DIGITAL
+                    que su organización y responder de manera más efectiva a los cambios actuales.</p>
                 </div>
               </div>
               <div class="col-sm-6">
@@ -403,9 +409,10 @@
                   <!--
                     <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
                   -->
-                  <a href="https://www.facebook.com/DevDataConsulting" target="_blank"><i class="fa fa-facebook"></i></a>
-                  <a href="https://www.linkedin.com/company/67219086/admin/" target="_blank"><i class="fa fa-google-plus"></i></a>
-                  <a href="https://www.linkedin.com/company/67219086/admin/" target="_blank"><i class="fa fa-linkedin"></i></a>
+                  <a href="https://www.facebook.com/DevDataConsulting" class="facebook" target="_blank"><i
+                      class="fa fa-facebook"></i></a>
+                  <a href="https://www.linkedin.com/company/67219086/admin/" class="instagram" target="_blank"><i
+                      class="fa fa-linkedin"></i></a>
                 </div>
 
               </div>
@@ -419,27 +426,24 @@
             <div class="form">
 
               <h4>Envíanos un mensaje</h4>
-              <p>Eos ipsa est voluptates. Nostrum nam libero ipsa vero. Debitis quasi sit eaque numquam similique
-                commodi harum aut temporibus.</p>
+              <p>Déjenos un mensaje y nos prondremos en contácto lo más pronto posible.</p>
 
               <form action="" method="post" role="form" class="contactForm">
                 {% csrf_token %}
 
                 <div class="form-group">
                   <input type="text" name="name" class="form-control" id="name" required
-                    placeholder="Nombre de su organización" data-rule="minlen:4"
-                    data-msg="Please enter at least 4 chars" />
+                    placeholder="Nombre de referencia" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
                   <div class="validation"></div>
                 </div>
                 <div class="form-group">
                   <input type="number" class="form-control" name="telefono" id="telefono" required
-                    placeholder="Teléfono de su organización" data-rule="telefono"
-                    data-msg="Please enter a valid email" />
+                    placeholder="Número de celular" data-rule="telefono" data-msg="Please enter a valid email" />
                   <div class="validation"></div>
                 </div>
                 <div class="form-group">
                   <input type="email" class="form-control" name="email" id="email" required
-                    placeholder="Correo de la organización" data-rule="email" data-msg="Please enter a valid email" />
+                    placeholder="Correo electrónico" data-rule="email" data-msg="Please enter a valid email" />
                   <div class="validation"></div>
                 </div>
                 <div class="form-group">
@@ -454,7 +458,7 @@
                 </div>
                 <div id="sendmessage">Your message has been sent. Thank you!</div>
                 <div id="errormessage"></div>
-                <div class="text-center"><button type="submit" title="Send Message">Enviar Mensaje</button></div>
+                <div class="text-center"><button type="submit" title="Send Message">Enviar <i class="fa fa-paper-plane-o"></i> </button></div>
               </form>
             </div>
           </div>
